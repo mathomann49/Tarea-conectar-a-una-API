@@ -16,7 +16,7 @@ const GetPj = async () => {
          
     } catch (error) {
         cardContainer.innerHTML =`<div class="img-container">
-        <img src="./error_img.png" alt="" />
+        <img src="./assets/error_img.png" alt="" />
         <h2>Oops!, an unexpected error occurred (${error}), please reload the page</h2>
     </div>` 
         console.log(error);
@@ -28,7 +28,7 @@ const renderNewPj = (character) => {
     const {image, name, species, origin, gender, id } = character;
     if (!id) {
         cardContainer.innerHTML =`<div class="img-container">
-        <img src="./question-guy.png" alt="" />
+        <img src="./assets/question-guy.png" alt="" />
         <h2>Oops!, no character available, please try the next one</h2>
     </div>` 
     }
